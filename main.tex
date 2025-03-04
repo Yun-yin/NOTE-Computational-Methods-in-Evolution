@@ -1,0 +1,28 @@
+\def\allfiles{}
+\documentclass[12pt, a4paper]{book}
+%packages and enviroment
+\input{config/config}
+
+\begin{document}
+
+%insert cover, abstract, context
+\include{config/cover}
+
+\include{chap0/chapter0}
+
+\part{Phylogenetics}
+
+\include{chap1/chapter1}
+\include{chap2/chapter2}
+
+\part{Population Genetics}
+
+%\include{chap3/chapter3}
+%\include{chap4/chapter4}
+% ...
+
+\appendix
+
+\include{appendix/Markov_chain_brief}
+
+\end{document}

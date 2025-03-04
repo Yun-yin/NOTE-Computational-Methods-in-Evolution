@@ -1,0 +1,42 @@
+\ifx\allfiles\undefined
+\documentclass[12pt]{book}
+\input{../config/config}
+\begin{document}
+% \input{../config/cover} 
+\else
+\fi
+
+\chapter{Basic Phylogeny Reconstruction}
+
+\section{Terminology for trees}
+
+\section{Distance-Based Phylogeny Reconstruction}
+
+    \subsection{Phylogeny Distances}
+    \subsection{UPGMA}
+    \subsection{Neighbor Joining}
+
+\section{Parsimony in Phylogeny Reconstruction}
+
+\begin{align*}
+    {lim}_{n\rightarrow \infty}(1-\frac{1}{n})^n&\\
+    {lim}_{n\rightarrow \infty} n ln(1-\frac{1}{n}) 
+    &= {lim}_{n\rightarrow \infty} \frac{ln(1-\frac{1}{n})}{\frac{1}{n}} \\
+    &= {lim}_{n\rightarrow \infty} \frac{\frac{1}{1-\frac{1}{n}}\frac{1}{n^2}}{-\frac{1}{n^2}}\\
+    &= {lim}_{n\rightarrow \infty} \frac{-1}{1-\frac{1}{n}}\\
+    &= -1\\
+    \Rightarrow {lim}_{n\rightarrow \infty}(1-\frac{1}{n})^n &= e ^{-1}\\
+\end{align*}
+
+    \subsection{Parsimony of a tree}
+    \subsection{Parsimonious Tree for Given Data}
+    \subsection{The Limitation of Parsimony Principle}
+
+\section{Measure the Difference of trees}
+
+
+
+%  content
+\ifx\allfiles\undefined
+\end{document}
+\fi

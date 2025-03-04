@@ -1,0 +1,37 @@
+\documentclass[tikz,border=10pt]{standalone}
+\usepackage{tikz}
+
+\begin{document}
+
+\begin{tikzpicture}
+
+    %123
+    %\iffalse
+    \foreach \i/\x in {x/0,y/2,z/4,w/6}{
+        \node[](\i) at (\x,0) {$\i$};
+    }
+
+    \foreach \i/\d/\l/\r/\x in {cyz/2/y/z/3,cyzw/4/cyz/w/4.5,root/8/cyzw/x/2.75}{
+        \draw[thick] (\l) -- (\x, -\d) -- (\r);
+        \coordinate (\i) at (\x, -\d);
+    }
+
+    \draw[thick] (root) -- (3.0525, -9);
+    %\fi
+
+    %888
+    \iffalse
+    \foreach \i/\x in {x/8,y/2,z/4,w/6}{
+        \node[](\i) at (\x,0) {$\i$};
+    }
+
+    \foreach \i/\d/\l/\r/\x in {cxw/2/x/w/7,cxwz/3/cxw/z/5.5,root/4/cxwz/y/3.75}{
+        \draw[thick] (\l) -- (\x, -\d) -- (\r);
+        \coordinate (\i) at (\x, -\d);
+    }
+
+    \draw[thick] (root) -- (6, -9);
+    \fi
+\end{tikzpicture}
+
+\end{document}

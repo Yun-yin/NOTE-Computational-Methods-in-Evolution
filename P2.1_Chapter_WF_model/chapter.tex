@@ -1,0 +1,62 @@
+\ifx\allfiles\undefined
+\documentclass[12pt]{book}
+\input{../config/config}
+\begin{document}
+% \input{../config/cover} 
+\else
+\fi
+
+\chapter{Basics}
+
+\section{Wright-Fisher Model and Kingman's Coalesce}
+    \subsection{W-F model}
+        \textbf{Basic assumptions of the Wright Fisher model}
+        \begin{itemize}
+            \item non-overlapping generations 
+            \item constant population size
+            \item panmictic
+            \item neutral (i.e. no selection)
+            \item no recombination
+            \item $N$ diploid individuals population of $2N$ haploid alleles 
+            
+            (in case of autosomal DNA)
+        \end{itemize}
+
+        Each allele chooses an ancestor in the generation before. A population of $10$ individuals can be modeled as the figure.
+
+        \begin{figure}[htbp]
+            \centering
+            \includegraphics[scale = 1]{fig/W-F_123.pdf}
+            \caption{simulated W-F model with $10$ individual and trace back $9$ generations}
+        \end{figure}
+
+        Samples are assumed to be taken purely randomly from the population. We take a sample of $4$ individuals from the population, for example, $(x,y,z,w)$.  
+        \begin{figure}[htbp]
+            \centering
+            \includegraphics[scale = 1]{fig/W-F_123_label.pdf}
+            \caption{simulated W-F population}
+        \end{figure}
+
+        Another simulation and sample.
+        \begin{figure}[htbp]
+            \centering
+            \includegraphics[scale = 0.55]{fig/W-F_888.pdf}
+            \includegraphics[scale = 0.55]{fig/W-F_888_label.pdf}
+            \caption{simulated W-F population}
+        \end{figure}
+
+        This induces a specific random distribution for the genealogies of the sampled alleles.
+
+        \begin{figure}[htbp]
+            \centering
+            \includegraphics[scale = 0.8]{fig/W-F_result_123.pdf}
+            \includegraphics[scale = 0.8]{fig/W-F_result_888.pdf}
+            \caption{simulated W-F population}
+        \end{figure}
+        
+        Haploid population of size $N_e$
+
+
+\ifx\allfiles\undefined
+\end{document}
+\fi

@@ -1,0 +1,74 @@
+\ifx\allfiles\undefined
+\documentclass[12pt]{book}
+\input{../config/config}
+\begin{document}
+% \input{../config/cover} 
+\else
+\fi
+
+\setcounter{chapter}{-1}    %introduction from chapter 0
+
+\chapter{Introduction}
+%  content
+\section{Outline}
+    \subsection{Phylogenetics part}
+        \begin{itemize}
+            \item Tree Notation
+            \item Distance-Based and Maximum Parsimony Phylogeny Reconstruction
+            \item Measures for how different two trees are
+            \item Sequence Evolution Models (JC, F81, HKY, F84, GTR, PAM and $\Gamma$-distributed rates)
+            \item Maximum-Likelihood (ML) in phylogeny estimation and Bootstrapping
+            \item Bayesian phylogeny reconstruction and MCMC
+            \item Common problems in phylogenetics and consequences for phylogenomics
+            \item Modelling the substitution process on sequences
+            \item Quantitative Characters and Independent Contrasts
+            \item Model selection
+            \item Statistical Alignment (TKF91, TKF92, pairHMMs, multiple HMMs)
+            \item Tests for trees and branches
+        \end{itemize}
+
+    \subsection{Population Genetics part}
+        \begin{itemize}
+            \item Wright-Fisher model and Estimators of $\theta$
+            \item population genealogy with Mutation and Immigration
+            \item Important Sampling and Approximate Bayesian Computation (ABC)
+            \item Recombination: ARG and approximations
+            \item Selection: ASG and detection
+            \item population cluster
+        \end{itemize}
+
+    \subsection{Related mathematics}
+        \begin{itemize}
+            \item Basic concepts from probability theory
+            \item Basic linear algebra
+            \item Markov process and Markov chain
+            \item \dots
+        \end{itemize}
+    
+    \subsection{Aims}
+        \begin{itemize}
+            \item Understand princples and rationales underlying the methods
+            \item Explore available software
+            \item What is efficiently doable, what is difficult?
+            \item What are the strengths and weaknesses of the methods?
+            \item Which method is appropriate for which dataset?
+            \item Learn what is necessary to read papers about new computational methods
+            \item Future directions of phylogenetics
+        \end{itemize}
+
+    \subsection{Recommended Books}\hfill
+        
+        J. Felsenstein (2004) Inferring Phylogenies
+        
+        Z. Yang (2006) Computational Molecular Evolution
+        
+        R. Nielsen, [Ed.] (2005) Statistical Methods in Molecular Evolution
+        
+        R. Durbin, S. Eddy, A. Krogh, G. Mitchison (1998) Biological Sequence Analysis
+        
+        W. Ewens, G. Grant (2005) Statistical Methods in Bioinformatics
+
+%  content
+\ifx\allfiles\undefined
+\end{document}
+\fi

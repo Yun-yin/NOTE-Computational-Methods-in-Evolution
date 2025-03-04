@@ -1,0 +1,16 @@
+\documentclass[tikz]{standalone}
+\usepackage{pgffor}
+
+\begin{document}
+    \begin{tikzpicture}
+        \foreach \x/\y/\n/\l in {0/4/a/,1/4/b/,2/4/c/,3/4/d/$k_1$,4/4/e/$k_2$,5/4/f/$k_3$,6/4/g/$k_4$,7/4/h/,8/4/i/}{
+            \node[] (\n) at (\x,\y) {\l};
+        }
+        \foreach \x/\y/\n/\l in {1.5/0.5/lnode1/,1/1/lnode2/,3.5/0.5/k1/,5.5/0.5/k2/,4.5/1.5/k/\textcolor{red}{k},7.5/0.5/rnode1/,5.5/2.5/rnode2/,4/4/root/R}{
+            \node[] (\n) at (\x,4-\y) {\l};
+        }
+        \foreach \m/\n/\l in {a/lnode2/,b/lnode1/,c/lnode1/,lnode1/lnode2/,d/k1/,e/k1/,f/k2/,g/k2/,k1/k/,k2/k/,h/rnode1/,i/rnode1/,k/rnode2/,rnode1/rnode2/,lnode2/root/,rnode2/root/}{
+            \draw[thick] (\m) -- node[right]{\l} (\n);
+        }
+    \end{tikzpicture}
+\end{document}
